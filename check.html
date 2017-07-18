@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>确认订单</title>
+<meta name="keywords" content="安徽华源医药大健康科技有限公司，华源医药，大健康，安徽名企，安徽医药产业">
+<meta name="description" content="中成药、化学原料药、生物制品、化学药制剂、诊断药品、生化药品、抗生素、保健食品、消杀用品、卫生材料销售">
+<meta name="author" content="sherry">
+
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="js/bootstrap-dropdown.js" rel="stylesheet">
+
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet"> 
+<!-- <link
+	href="css/zsy.css"
+	rel="stylesheet"> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+</script>
+<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/sy.js"></script>
+
+<!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+
+</head>
+
+<body style="margin-left:50px;" >
+<div  style="width:100%;height:50px;margin-top:0px;">
+        <div id="navbar" class="navbar-default navbar" >
+            <div class="navbar-header">
+            	<button type="button" class="navbar-toggle"  data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" title="华源医药有限公司"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
+                    <li><a href="cart.html">购物车</a></li>
+                    <li><a href="orders.html">我的订单</a></li>
+                   
+                    
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    	我的愿望清单
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><h4>经管励志</h4>
+                                        <div style="width:600px;height:50px;" >
+                                            <a href="" target="_blank">励志成功</a>
+                                            <a href="" target="_blank">管理</a>
+                                            <a href="" target="_blank">经济</a>
+                                            <a href="" target="_blank">投资理财</a>
+                                            <a href="" target="_blank">心灵修养</a>
+                                            <a href="" target="_blank">职场</a>
+                                            <a href="" target="_blank">名人演说</a>
+                                            <a href="" target="_blank">金融</a>
+                                        </div></li>
+                                        <li><h4>经管励志</h4>
+                                        <div >
+                                            <a href="" target="_blank">励志成功</a>
+                                            <a href="" target="_blank">管理</a>
+                                            <a href="" target="_blank">经济</a>
+                                            <a href="" target="_blank">投资理财</a>
+                                            <a href="" target="_blank">心灵修养</a>
+                                            <a href="" target="_blank">职场</a>
+                                            <a href="" target="_blank">名人演说</a>
+                                            <a href="" target="_blank">金融</a>
+                                        </div></li>
+                      </ul>
+                    </li>
+                    <li><a href="#portfolio">个人中心</a></li>
+                    <li><a href="#clientele">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 页眉结束 -->
+
+<section>
+<div style="width:300px;height:50px;" class="col-md-3">
+<span  ><img alt="" src="images/left.jpg"></span>
+</div>
+
+<!-- <div style="width:300px;height:50px;margin-top:50px;margin-left:100px;" class="col-md-3"  >
+<span>购物车</span>
+</div> -->
+
+<div style="width:600px;margin-left:500px;margin-top:0px;" class="col-md-9">
+
+<canvas id="myCanvas" width="600" height="20" >
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+
+cxt.beginPath();
+cxt.arc(70,10,5,0,Math.PI*2,true);
+cxt.fillStyle="#66DD00";
+
+
+cxt.closePath();
+cxt.fill();
+cxt.lineTo(270,10);
+
+cxt.stroke();
+
+var d=document.getElementById("myCanvas");
+var dxt=d.getContext("2d");
+
+dxt.beginPath();
+cxt.arc(275,10,5,0,Math.PI*2,true);
+dxt.fillStyle="#66DD00";
+
+
+dxt.closePath();
+dxt.fill();
+dxt.lineTo(470,10);
+
+dxt.stroke();
+
+
+var e=document.getElementById("myCanvas");
+var ext=e.getContext("2d");
+
+ext.beginPath();
+ext.arc(475,10,5,0,Math.PI*2,true);
+ext.fillStyle="#66DD00";
+
+
+ext.closePath();
+ext.fill();
+/* ext.lineTo(370,10); */
+ 
+ext.stroke(); 
+
+
+</script>
+
+
+<span style="margin-left:50px;margin-top:0px;">我的购物车</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="margin-left:100px;margin-top:0px;">确认订单信息</span>
+<span style="margin-left:80px;margin-top:0px;">成功提交订单</span>
+
+</div>
+ <!-- <div style="height:50px;margin-top:50px;margin-left:0px;" class="col-md-3"  >
+<span>新用户满39元全场包邮</span>
+</div>
+ -->
+
+</section>
+
+
+<div style="text-align:center;margin-top:200px;">
+
+<a href="homepage.html">我们会及时安排工作人员确认订单，以便快速给您发货! 返回首页，再看看>></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
